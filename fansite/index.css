@@ -3,16 +3,44 @@
     padding: 0;
 }
 
+.img-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .main-heading{
     text-align: center;
     text-decoration:underline ;
+    margin: 0 90px;
+    margin-top: 90px;
+}
+.quote{
+    margin: 60px;
+    font-size: 30px
 }
 .second-image{
-    width: 35%;
-    height: 500px;
+    display: block;
+    width: 85%;
+    height: 900px;
 }
 .homepage-image{
-    width: 100vw;
+    width: 85%;
     height: 500px;
 
 }
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+
+  body {
+    background-image: url(https://image.freepik.com/free-vector/healthy-vegan-seamless-wallpaper-vector_53876-62729.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 10s linear infinite alternate;
+    color: black;
+  }
